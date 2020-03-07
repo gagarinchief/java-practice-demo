@@ -21,7 +21,7 @@ public class SearchList {
 
 //        User.printUsers(users);
 
-        System.out.println(me.output(false));
+        System.out.println(me.toString());
 
     }
 
