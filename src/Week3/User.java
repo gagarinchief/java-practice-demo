@@ -36,4 +36,8 @@ public class User {
     }
 
 
+    public static void printUser(User u){
+        System.out.println(u.getFullName());
+    }
+
 }
