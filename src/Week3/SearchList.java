@@ -19,7 +19,9 @@ public class SearchList {
         users.add(yoy);
 
 
-        User.printUsers(users);
+//        User.printUsers(users);
+
+        System.out.println(me.output(false));
 
     }
 

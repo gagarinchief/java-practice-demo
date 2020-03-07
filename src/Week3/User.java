@@ -8,9 +8,15 @@ public class User {
     public boolean verified = false;
 
     public String output() {
-        return "Hi " + firstName + " " + lastName;
+        return "Hi " + getFullName();
     }
+public String output (boolean nice) {
+        if (nice) {
+            return "nice " + getFullName();
 
+        }
+        return "not nice " + getFullName();
+}
     public String getFirstName() {
         return firstName.toUpperCase();
     }
