@@ -21,7 +21,8 @@ public class SearchList {
 
 //        User.printUsers(users);
 
-        System.out.println(me.toString());
+        System.out.println(me.equals(yoy));
+        System.out.println(me.hashCode() == yoy.hashCode());
 
     }
 
