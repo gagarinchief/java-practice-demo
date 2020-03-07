@@ -55,11 +55,15 @@ public class User {
         }
     }
 
+    public static int searchList(List<User> users, User u) {
+        return searchList(users, u.getFullName());
+    }
+
     public static int searchList(List<User> users, String firstName, String lastName) {
         return searchList(users, firstName + " " + lastName);
     }
 
-        public static int searchList(List<User> users, String fullName) {
+    public static int searchList(List<User> users, String fullName) {
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getFullName().equals(fullName)) {
                 return i;

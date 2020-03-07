@@ -18,11 +18,12 @@ public class SearchList {
         users.add(me);
         users.add(yoy);
 
+        System.out.println(User.searchList(users, yoy));
 
 //        User.printUsers(users);
 
-        System.out.println(me.equals(yoy));
-        System.out.println(me.hashCode() == yoy.hashCode());
+//        System.out.println(me.equals(yoy));
+//        System.out.println(me.hashCode() == yoy.hashCode());
 
     }
 
