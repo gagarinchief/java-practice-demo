@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Execution {
     public static void main(String[] args) {
-        Student s = new Student();
+        Student s = new Student("Ivan", "Fuckoff"); //default Constructor w/o value
+        System.out.println(s.firstName + " " + s.lastName);
+
         s.major = "MUSTACHE DESIGNNNN";
         s.firstName = "Smartie-smart";
         s.lastName = "Vasya";
