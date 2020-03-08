@@ -11,28 +11,17 @@ public class SearchList {
         me.setFirstName("Vasya");
         me.setLastName("Vasin");
 
-        User yoy = new User();
-        yoy.setFirstName("Not");
-        yoy.setLastName("Me");
+        User you = new User();
+        you.setFirstName("Not");
+        you.setLastName("Me");
 
         List<User> users = new ArrayList<User>();
         users.add(me);
-        users.add(yoy);
+        users.add(you);
 
-        User search = new User();
-        search.setFirstName("Not");
-        search.setLastName("Me");
+        User.changeCrap(you);
+        System.out.println(you);
 
-        User found = User.findUser(users, search);
-
-        found.setFirstName("Sally");
-        System.out.println(yoy);
-//        System.out.println(User.searchList(users, yoy));
-
-//        User.printUsers(users);
-
-//        System.out.println(me.equals(yoy));
-//        System.out.println(me.hashCode() == yoy.hashCode());
 
     }
 

@@ -82,6 +82,11 @@ public class User {
         return -1;
     }
 
+    public static void changeCrap(User x) {
+        x = new User();
+        x.setFirstName("Changed");
+    }
+
     @Override
     public String toString() {
         return "User{" +
