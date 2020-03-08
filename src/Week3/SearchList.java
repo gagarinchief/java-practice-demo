@@ -1,5 +1,6 @@
 package Week3;
 
+import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,14 +12,22 @@ public class SearchList {
         me.setLastName("Vasin");
 
         User yoy = new User();
-        yoy.setFirstName("Petya");
-        yoy.setLastName("Petin");
+        yoy.setFirstName("Not");
+        yoy.setLastName("Me");
 
         List<User> users = new ArrayList<User>();
         users.add(me);
         users.add(yoy);
 
-        System.out.println(User.searchList(users, yoy));
+        User search = new User();
+        search.setFirstName("Not");
+        search.setLastName("Me");
+
+        User found = User.findUser(users, search);
+
+        found.setFirstName("Sally");
+        System.out.println(yoy);
+//        System.out.println(User.searchList(users, yoy));
 
 //        User.printUsers(users);
 
